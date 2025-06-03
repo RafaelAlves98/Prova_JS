@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <title>Exercício 1</title>
+  </head>
+
+  <body>
+    <label for="selecionaFruta">Selecione uma Fruta: </label>
+    <select id="selecionaFruta">
+      <option value="" disabled selected hidden>Escolha uma fruta</option>
+    </select>
+
+    <div id="exibeFruta" style="display: none">
+      <p id="nomeFruta"></p>
+      <div id="imagemFruta">
+      <div class="row g-4">
+      <div class="col-sm-6 col-md-4" data-categoria="objetos">
+        <div class="card h-100 text-center">
+          <img src="Img/laranja.jpg" class="card-img-top p-3" alt="laranja">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="product1_title">laranja</h5>
+            <p class="card-text" data-i18n="product1_desc">Fruta fresca</p>
+            <span class="fw-bold">R$ 5,90</span>
+            <button class="btn btn-primary mt-3 btn-comprar"
+              data-titulo="laranja"
+              data-desc="Fruta fresca e saborosa"
+              data-preco="R$ 5,90"
+              data-img="Img/laranja.jpg"
+              >Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4" data-categoria="objetos">
+        <div class="card h-100 text-center">
+          <img src="Img/abacate.jpg" class="card-img-top p-3" alt="abacate">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="product1_title">abacate</h5>
+            <p class="card-text" data-i18n="product1_desc">Fruta fresca</p>
+            <span class="fw-bold">R$ 5,90</span>
+            <button class="btn btn-primary mt-3 btn-comprar"
+              data-titulo="abacate"
+              data-desc="Fruta fresca e saborosa"
+              data-preco="R$ 7,90"
+              data-img="Img/abacate.jpg"
+              >Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4" data-categoria="objetos">
+        <div class="card h-100 text-center">
+          <img src="Img/maca.png" class="card-img-top p-3" alt="maca">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="product1_title">maca</h5>
+            <p class="card-text" data-i18n="product1_desc">Fruta fresca</p>
+            <span class="fw-bold">R$ 5,90</span>
+            <button class="btn btn-primary mt-3 btn-comprar"
+              data-titulo="maca"
+              data-desc="Fruta fresca e saborosa"
+              data-preco="R$ 5,90"
+              data-img="Img/maca.jpg"
+              >Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4" data-categoria="objetos">
+        <div class="card h-100 text-center">
+          <img src="Img/pera.jpg" class="card-img-top p-3" alt="pera">
+          <div class="card-body">
+            <h5 class="card-title" data-i18n="product1_title">pera</h5>
+            <p class="card-text" data-i18n="product1_desc">Fruta fresca</p>
+            <span class="fw-bold">R$ 5,90</span>
+            <button class="btn btn-primary mt-3 btn-comprar"
+              data-titulo="pera"
+              data-desc="Fruta fresca e saborosa"
+              data-preco="R$ 5,90"
+              data-img="Img/pera.jpg"
+              >Comprar</button>
+          </div>
+        </div>
+      </div>
+      </div>
+     </div>
+    </div>
+  </body>
+</html>
