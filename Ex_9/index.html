@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Telefone Brasileiro</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Validador de Telefone Brasileiro</h1>
+        <label for="telefoneInput">Digite o número de telefone: </label>
+        <input type="text" id="telefoneInput" placeholder="Ex: (11) 98765-4321 ou +55 (21) 1234-5678">
+        <button id="btnValidar">Validar Telefone</button>
+        <p id="resultado"></p>
+        <div class="examples">
+            <h3>Formatos Válidos:</h3>
+            <ul>
+                <li><code>(XX) XXXXX-XXXX</code> (9 dígitos, com hífen. Ex: `(11) 98765-4321`)</li>
+                <li><code>(XX) XXXX-XXXX</code> (8 dígitos, com hífen. Ex: `(11) 1234-5678`)</li>
+                <li><code>(XX) XXXXXXXXX</code> (9 dígitos, sem hífen. Ex: `(11) 987654321`)</li>
+                <li><code>(XX) XXXXXXXX</code> (8 dígitos, sem hífen. Ex: `(11) 12345678`)</li>
+                <li>Com prefixo internacional `+55` (Ex: `+55 (11) 98765-4321`)</li>
+                <li>Com ou sem espaço entre o `+55` e o parênteses, e entre os parênteses e o número.</li>
+            </ul>
+            <h3>Formatos Inválidos:</h3>
+            <ul>
+                <li><code>XX 91234-5678</code> (sem parênteses no DDD)</li>
+                <li><code>(16)12345678</code> (sem espaço opcional, mas o regex acima aceita isso) - *Obs: O RegEx atual aceita isso, se quiser um espaço obrigatório, mude `\s?` para `\s`.*</li>
+                <li><code>+55-16-1234-5678</code> (hífen em vez de espaço)</li>
+                <li><code>(16) 1234567</code> (menos de 8 dígitos)</li>
+                <li><code>(16) 1234567890</code> (mais de 9 dígitos)</li>
+                <li><code>(16) 123-45678</code> (hífen em posição errada para 9 dígitos)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
